@@ -1,0 +1,89 @@
+/* STYLE.CSS */
+/* FONTS */
+@font-face {
+    font-weight: 400;
+    font-family: "Bliss Pro";
+    src: url('../fonts/blisspro_medium.otf');
+}
+@font-face {
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Bliss Pro";
+    src: url('../fonts/blisspro_mediumitalic.otf');
+}
+@font-face {
+    font-weight: 500;
+    font-family: "Bliss Pro";
+    src: url('../fonts/blisspro_heavyitalic.otf');
+}
+@font-face {
+    font-weight: 700;
+    font-family: "Bliss Pro";
+    src: url('../fonts/blisspro_heavy.otf');
+}
+<!------------------------------------------------------------------------------------------------>
+body {
+    background-color:#141414;
+    font-family: "Bliss Pro";
+    font-style: normal;
+    text-decoration: line-through;
+}
+/*
+a {color:dodgerblue; font-size: 18px; font-weight: bold; text-decoration:none}
+a:hover {color: white}
+ul {list-style-type: none}
+.product_description_headers {text-decoration-color: black; font-size: 18px; font-weight: 400; background-color: #eaeaea}
+#product_short_description {color: #707070; font-size: 14px; font-style: italic; line-height: 16px}
+#product_description {color: #484343; font-size: 16px; font-weight: 400; line-height: 24px; text-align: left}
+#product_specification_list, #product_specification_table {list-style-type:circle; font-family: monospace}
+.contacts_body_inputs, .email {width:500px;color: chocolate; font-size: 16px; font-family: sans-serif}
+#contacts_body_comment {width: 500px; height: 100px;color:darkcyan; font-size: 18px; font-family: sans-serif}
+#product_image_on_page {border: 2px solid darkcyan}
+.email:valid {color: green}
+input[type="name"] {text-transform: capitalize}
+td.vertical {writing-mode: vertical-lr; width: 2em}
+#product_image_on_page:hover {border: 0px solid darkcyan; margin:2px}
+.body_product_page p::first-letter {color: cadetblue}
+*/
+<!------------------------------------------------------------------------------------------------>
+.clear {
+    clear: both;
+}
+.header {
+    position: relative;
+    height: 70px;
+    font-family: "Bliss Pro";
+    font-style: normal;
+    text-decoration: line-through;
+}
+.logo {
+    display: inline;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    vertical-align: middle;
+}
+
+.menu {
+    position: relative;
+    display: inline;
+    top: 10px;
+    right: 30px;
+    float: right;
+    vertical-align: middle;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0em 4em 0em 4em;
+    text-transform: uppercase;
+    display:inline;
+}
+
+.menu li:first-of-type {
+    padding: 0em 0em 0em 0em;
+}
+
+.menu li:last-of-type{
+    padding: 0em 0em 0em 0em;
+}
