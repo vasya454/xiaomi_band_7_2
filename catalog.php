@@ -2,7 +2,7 @@
     //print __DIR__;
     require_once(__DIR__ . "/header.php");
 ?>
-       <div class="body">
+       <div class="content">
         <hr>
         <h3>Каталог товаров:</h3>
         <form>

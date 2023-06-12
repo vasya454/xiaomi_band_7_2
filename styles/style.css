@@ -23,14 +23,27 @@
 }
 <!------------------------------------------------------------------------------------------------>
 body {
-    background-color:#141414;
     font-family: "Bliss Pro";
     font-style: normal;
-    text-decoration: line-through;
+}
+
+.content {
+    font-family: "Bliss Pro";
+    font-style: normal;
+}
+
+a {
+    font-family: "Bliss Pro";
+    font-style: normal;
+    color:dodgerblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none;
+}
+a:hover {
+    color: white;
 }
 /*
-a {color:dodgerblue; font-size: 18px; font-weight: bold; text-decoration:none}
-a:hover {color: white}
 ul {list-style-type: none}
 .product_description_headers {text-decoration-color: black; font-size: 18px; font-weight: 400; background-color: #eaeaea}
 #product_short_description {color: #707070; font-size: 14px; font-style: italic; line-height: 16px}
@@ -54,7 +67,7 @@ td.vertical {writing-mode: vertical-lr; width: 2em}
     height: 70px;
     font-family: "Bliss Pro";
     font-style: normal;
-    text-decoration: line-through;
+    color: white;
 }
 .logo {
     display: inline;
@@ -86,4 +99,9 @@ td.vertical {writing-mode: vertical-lr; width: 2em}
 
 .menu li:last-of-type{
     padding: 0em 0em 0em 0em;
+}
+
+.footer {
+    font-family: "Bliss Pro";
+    font-style: normal;
 }

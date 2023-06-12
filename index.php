@@ -2,7 +2,7 @@
     //print __DIR__;
     require_once(__DIR__ . "/header.php");
 ?>
-    <div class="body">
+    <div class="content">
         <hr>
         <p>Приветствуем Вас на нашем сайте!</p>
     </div>
