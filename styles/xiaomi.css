@@ -36,9 +36,55 @@ body {
     font-family: "Bliss Pro";
     font-style: normal;
     font-size: 16px;
-    height: 6114px;
-    width: 1440px;
+    max-height: 6114px;
+    max-width: 1440px;
 }
+
+/* Текст */
+
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 86px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 20px 0px 20px 0px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0px 10px 0px;
+}
+
+p {
+    font-family: 'Bliss Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0px;
+    position: relative;
+    top: 50px;
+}
+
 /* Верхняя часть страницы */
 .top {
     position: relative;
@@ -90,7 +136,7 @@ body {
 }
 
 /* Акционное предложение */
-.button1 {
+.button-1 {
     position: absolute;
     height: 50px;
     width: 310px;
@@ -118,69 +164,27 @@ body {
     font-size: 24px;
 }
 
-/* Купить сейчас */
-.sell-button {
-    position:relative;
-    top: 50px;
-    width: 247px;
-    height: 79px;
-    background: #F58D56;
-    border-radius: 27px;
-    border: none;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
 /* Xiaomi Band 7 “Большие” изменения */
-.main_text {
+.main-text {
     position: absolute;
-    width: 558px;
-    height: 200px;
+    width: 480px;
     left: 100px;
-    top: 242px;
+    top: 272px;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 46px;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* ↓ Обводка текста (было в Фигме, потом исчезло) ↓ */
+    /* ↓ Обводка текста (было в Фигме, потом исчезло) ↓
     text-shadow:    0px 4px 4px rgba(0, 0, 0, 0.25),
                     0px 4px 4px rgba(0, 0, 0, 0.25),
                     -1px -1px 0 black,
-                    1px -1px 0 black;
-}
-
-.main_text span{
-    display: block;
-    padding-top: 30px;
-}
-
-/* Самым ожидаемым продукт Xiaomi в 2022 году */
-.main_text span:last-of-type {
-    width: 519px;
-    height: 60px;
-    font-family: 'Bliss Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.5;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    text-shadow:    0px 4px 4px rgba(0, 0, 0, 0.25),
-                    0px 4px 4px rgba(0, 0, 0, 0.25),
-                    0px 0px 0 black,
-                    0px 0px 0 black;
+                    1px -1px 0 black;  */
 }
 
 /* Треугольный низ верха страницы (левый) */
-.triangle_bottom_left {
+.triangle-bottom-left {
     position: absolute;
     top: 800px;
     width: 0px;
@@ -191,7 +195,7 @@ body {
 }
 
 /* Треугольный низ верха страницы (правый) */
-.triangle_bottom_right {
+.triangle-bottom-right {
     position: absolute;
     top: 800px;
     left: 720px;
@@ -203,7 +207,7 @@ body {
 }
 
 /* xiaomi_band_7 2 (изображение товара) */
-.xiaomi_band_7_2 {
+.xiaomi-band-7_2 {
     box-sizing: border-box;
     position: absolute;
     width: 904px;
@@ -277,62 +281,218 @@ span.discount {
     right: 10px;
 }
 
-
-/* Текст */
-
-h1 {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-h2 {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-h3 {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-p {
-    font-family: 'Bliss Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.5;
-}
-
 #description {
     position: relative;
     width: 1605px;
     height: 3230px;
     left: 100px;
-    top: 85px;
+    top: 100px;
 }
 
 #about {
+    display: flex;
     width: 1605px;
     height: 456px;
 }
 
-#slider_text {
+#slider-text {
+    display: inline-block;
     width: 477px;
     height: 255px;
 }
 
+/* Купить сейчас */
+.sell-button {
+    display: block;
+    position:relative;
+    top: 100px;
+    width: 247px;
+    height: 79px;
+    background: #F58D56;
+    border-radius: 27px;
+    border: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/*
+*,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+.slider {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.itc-slider__items {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255,255,255, 0.8);
+      font-size: 7rem;
+    }
+
+    .itc-slider__item:nth-child(1) {
+      background-image: url("../content/1.svg");
+    }
+
+    .itc-slider__item:nth-child(2) {
+      background-image: url("../content/2.svg");
+    }
+
+    .itc-slider__item:nth-child(3) {
+      background-image: url("../content/Mask%20group.svg");
+    }
+
+    .itc-slider__item:nth-child(4) {
+      background-color: #03a9f4;
+    }
+
+    .itc-slider__item:nth-child(5) {
+      background-color: #4caf50;
+    }
+
+.itc-slider__btn itc-slider__btn_prev {
+    background-image: url("../content/wrap-button.svg");
+    z-index: 2;
+}
+
+.itc-slider__btn itc-slider__btn_next {
+    background-image: url("../content/wrap-button.svg");
+    z-index: 2;
+    transform: scale(-1,1);
+}
+
+*/
+
+
+.slider {
+    position: relative;
+    max-width: 863px;
+    top: -20px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow-y: scroll;
+    overflow: hidden;
+    height: 456px;
+}
+
+.slides {
+    display: inline-block;
+    border-radius: 35px;
+    vertical-align: middle;
+    margin: 0px 15px 0px 15px;
+}
+
+.slide1 {
+    background-image: url('../content/1.svg');
+}
+.slide2 {
+    background-image: url('../content/2.svg');
+}
+.slide3 {
+    background-image: url('../content/Mask%20group.svg');
+}
+
+.wrap-button {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    background-image: url('../content/wrap-button.svg');
+    z-index: 2;
+}
+
+.next {
+    left: 795px;
+    transform: scale(-1,1);
+}
+
+.m {
+    width: 1240px;
+    height: 302px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 95px 0px 95px 0px;
+}
+
+.image-box {
+    width: 610px;
+    height: 302px;
+    border-radius: 60px;
+}
+
+.text-box {
+    width: 610px;
+    height: 302px;
+}
+
+.text-box h2 {
+    font-weight: 200;
+}
+
+.description_image1 {
+    background-image: url("../content/di1.svg")
+}
+
+.description_image2 {
+    background-image: url("../content/di2.svg")
+}
+
+.description_image3 {
+    background-image: url("../content/di3.svg")
+}
+
+.description_image4 {
+    background-image: url("../content/di4.svg")
+}
+
+.align-center {
+    position: relative;
+    left: 530px;
+    font-weight: 200;
+}
+
+.demo {
+    width: 1240px;
+    height: 624px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    margin: 95px 0px 10px 0px;
+}
+
+.description_image5 {
+    background-image: url("../content/di5.svg")
+}
+
+.description_image6 {
+    background-image: url("../content/di6.svg")
+}
+
+.description_image7 {
+    background-image: url("../content/di7.svg")
+}
+
+.description_image8 {
+    background-image: url("../content/di8.svg")
+}
+
+.summary-img {
+    width: 1240px;
+    height: 164px;
+    background-image: url("../content/image%207.svg");
+    margin: 10px 0px 24px 0px;
+}
